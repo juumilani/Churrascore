@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.catito.churrascore">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Truco" />
-        <activity android:name=".Futebol">
-        </activity>
+        <activity android:name=".Futebol"></activity>
         <activity android:name=".Pebolim" />
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".SplashScreenAcitivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
